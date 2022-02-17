@@ -1,0 +1,104 @@
+From: =?utf-8?q?David_Pr=C3=A9vot?= <taffit@debian.org>
+Date: Tue, 17 Sep 2019 13:50:51 -1000
+Subject: Move to namespaced PHPUnit versions
+
+---
+ tests/full/DieHardTest.php                  | 2 +-
+ tests/full/StatTest.php                     | 2 +-
+ tests/unit/RandomBytesTest.php              | 2 +-
+ tests/unit/RandomIntTest.php                | 2 +-
+ tests/unit/UtilityTest.php                  | 2 +-
+ tests/unit_with_basedir/RandomBytesTest.php | 2 +-
+ tests/unit_with_basedir/RandomIntTest.php   | 2 +-
+ tests/unit_with_basedir/UtilityTest.php     | 2 +-
+ 8 files changed, 8 insertions(+), 8 deletions(-)
+
+diff --git a/tests/full/DieHardTest.php b/tests/full/DieHardTest.php
+index 2e6dc70..883a9c9 100644
+--- a/tests/full/DieHardTest.php
++++ b/tests/full/DieHardTest.php
+@@ -1,5 +1,5 @@
+ <?php
+-class DieHardTest extends PHPUnit_Framework_TestCase
++class DieHardTest extends PHPUnit\Framework\TestCase
+ {
+     /**
+      * Birthday spacings: Choose random points on a large interval. 
+diff --git a/tests/full/StatTest.php b/tests/full/StatTest.php
+index e78eb14..99e3662 100644
+--- a/tests/full/StatTest.php
++++ b/tests/full/StatTest.php
+@@ -1,6 +1,6 @@
+ <?php
+ 
+-class StatTest extends PHPUnit_Framework_TestCase
++class StatTest extends PHPUnit\Framework\TestCase
+ {
+     /**
+      * All possible values should be > 30% but less than 170%
+diff --git a/tests/unit/RandomBytesTest.php b/tests/unit/RandomBytesTest.php
+index c6e2048..371df19 100644
+--- a/tests/unit/RandomBytesTest.php
++++ b/tests/unit/RandomBytesTest.php
+@@ -1,5 +1,5 @@
+ <?php
+-class RandomBytesTest extends PHPUnit_Framework_TestCase
++class RandomBytesTest extends PHPUnit\Framework\TestCase
+ {
+     public function testFuncExists()
+     {
+diff --git a/tests/unit/RandomIntTest.php b/tests/unit/RandomIntTest.php
+index b6371b7..17dbfa3 100644
+--- a/tests/unit/RandomIntTest.php
++++ b/tests/unit/RandomIntTest.php
+@@ -1,5 +1,5 @@
+ <?php
+-class RandomIntTest extends PHPUnit_Framework_TestCase
++class RandomIntTest extends PHPUnit\Framework\TestCase
+ {
+     public function testFuncExists()
+     {
+diff --git a/tests/unit/UtilityTest.php b/tests/unit/UtilityTest.php
+index 294a801..c767eb5 100644
+--- a/tests/unit/UtilityTest.php
++++ b/tests/unit/UtilityTest.php
+@@ -1,5 +1,5 @@
+ <?php
+-class UtilityTest extends PHPUnit_Framework_TestCase
++class UtilityTest extends PHPUnit\Framework\TestCase
+ {
+     public function testStrlen()
+     {
+diff --git a/tests/unit_with_basedir/RandomBytesTest.php b/tests/unit_with_basedir/RandomBytesTest.php
+index 69964ff..7efcc0c 100644
+--- a/tests/unit_with_basedir/RandomBytesTest.php
++++ b/tests/unit_with_basedir/RandomBytesTest.php
+@@ -1,5 +1,5 @@
+ <?php
+-class RandomBytesTest extends PHPUnit_Framework_TestCase
++class RandomBytesTest extends PHPUnit\Framework\TestCase
+ {
+     const NO_BASEDIR = 'There is no suitable CSPRNG installed on your system';
+     
+diff --git a/tests/unit_with_basedir/RandomIntTest.php b/tests/unit_with_basedir/RandomIntTest.php
+index 56197b0..bceb437 100644
+--- a/tests/unit_with_basedir/RandomIntTest.php
++++ b/tests/unit_with_basedir/RandomIntTest.php
+@@ -1,5 +1,5 @@
+ <?php
+-class RandomIntTest extends PHPUnit_Framework_TestCase
++class RandomIntTest extends PHPUnit\Framework\TestCase
+ {
+     const NO_BASEDIR = 'There is no suitable CSPRNG installed on your system';
+     
+diff --git a/tests/unit_with_basedir/UtilityTest.php b/tests/unit_with_basedir/UtilityTest.php
+index 294a801..c767eb5 100644
+--- a/tests/unit_with_basedir/UtilityTest.php
++++ b/tests/unit_with_basedir/UtilityTest.php
+@@ -1,5 +1,5 @@
+ <?php
+-class UtilityTest extends PHPUnit_Framework_TestCase
++class UtilityTest extends PHPUnit\Framework\TestCase
+ {
+     public function testStrlen()
+     {

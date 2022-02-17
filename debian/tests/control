@@ -1,0 +1,2 @@
+Test-Command: phpunit --bootstrap /usr/share/php/random_compat/random.php
+Depends: phpunit, @

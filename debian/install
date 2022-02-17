@@ -1,0 +1,3 @@
+debian/autoloaders	usr/share/pkg-php-tools
+debian/overrides	usr/share/pkg-php-tools
+lib/*			usr/share/php/random_compat

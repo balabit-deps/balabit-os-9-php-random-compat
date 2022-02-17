@@ -1,0 +1,27 @@
+Source: php-random-compat
+Section: php
+Priority: optional
+Maintainer: Debian PHP PEAR Maintainers <pkg-php-pear@lists.alioth.debian.org>
+Uploaders: Daniel Beyer <dabe@deb.ymc.ch>, David Prévot <taffit@debian.org>
+Build-Depends: debhelper-compat (= 13), dh-sequence-phpcomposer, phpunit
+Standards-Version: 4.6.0
+Homepage: https://github.com/paragonie/random_compat
+Vcs-Git: https://salsa.debian.org/php-team/pear/php-random-compat.git -b debian/latest
+Vcs-Browser: https://salsa.debian.org/php-team/pear/php-random-compat
+Rules-Requires-Root: no
+
+Package: php-random-compat
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${phpcomposer:Debian-require}
+Suggests: ${phpcomposer:Debian-suggest}
+Recommends: ${phpcomposer:Debian-recommend}
+Replaces: ${phpcomposer:Debian-replace}
+Breaks: ${phpcomposer:Debian-conflict}, ${phpcomposer:Debian-replace}
+Provides: ${phpcomposer:Debian-provide}
+Description: ${phpcomposer:description}
+ The random_compat polyfill provides simple interfaces for cryptographically
+ secure random number generators added in PHP 7.0.0:
+  * random_bytes(int) generates an arbitrary number of random bytes
+  * random_int(int, int) returns a random integer between two given values
+    (inclusive)

@@ -1,0 +1,164 @@
+php-random-compat (2.0.21-1) unstable; urgency=medium
+
+  * Upload to unstable now that Bullseye has been released
+
+  [ Paragon Initiative Enterprises ]
+  * Fix PHP 8.1.0 test code, widen phpunit
+
+  [ David Prévot ]
+  * Mark package as Multi-Arch: foreign
+  * Update standards version to 4.6.0, no changes needed.
+
+ -- David Prévot <taffit@debian.org>  Thu, 17 Feb 2022 04:24:05 -0400
+
+php-random-compat (2.0.20-1) experimental; urgency=medium
+
+  * Upload to experimental during the freeze
+
+  [ David Prévot ]
+  * Simplify gbp import-orig (and check signature)
+  * Use now provided upstream changelog
+  * Use dh-sequence-phpcomposer instead of pkg-php-tools
+  * Install /u/s/p/{autoloaders,overrides} files
+
+ -- David Prévot <taffit@debian.org>  Wed, 21 Apr 2021 07:24:34 -0400
+
+php-random-compat (2.0.19-1) unstable; urgency=medium
+
+  [ Paragon Initiative Enterprises ]
+  * Fix tests and dependencies
+
+  [ David Prévot ]
+  * d/control:
+    - Rename main branch to debian/latest (DEP-14)
+    - Drop versioned dependency satisfied in (old)stable
+    - Set Rules-Requires-Root: no.
+    - Use debhelper-compat 13
+    - Update Standards-Version to 4.5.1
+  * d/u/metadata: Set Bug-Database, Bug-Submit, Repository,
+    Repository-Browse, Security-Contact.
+  * d/watch: Update format version to 4
+  * d/rules: Simplify dh_auto_build call
+
+ -- David Prévot <taffit@debian.org>  Thu, 03 Dec 2020 20:49:57 -0400
+
+php-random-compat (2.0.18+git-1) unstable; urgency=medium
+
+  * Use upstream testsuite
+  * Document gbp import-ref usage
+  * Update standards version, no changes needed.
+
+ -- David Prévot <taffit@debian.org>  Tue, 17 Sep 2019 14:07:51 -1000
+
+php-random-compat (2.0.18-1) unstable; urgency=medium
+
+  [ Paragon Initiative Enterprises ]
+  * Update for v2.0.18
+
+  [ David Prévot ]
+  * Use debhelper-compat 12
+  * Drop get-orig-source target
+  * Update Standards-Version to 4.3.0
+
+ -- David Prévot <taffit@debian.org>  Tue, 08 Jan 2019 10:56:56 +1100
+
+php-random-compat (2.0.17-1) unstable; urgency=medium
+
+  [ Paragon Initiative Enterprises ]
+  * Version 2.0.17
+
+  [ David Prévot ]
+  * Update Standards-Version to 4.1.5
+
+ -- David Prévot <taffit@debian.org>  Sat, 07 Jul 2018 09:15:16 -1000
+
+php-random-compat (2.0.15-1) unstable; urgency=medium
+
+  [ Paragon Initiative Enterprises ]
+  * Release notes for v2.0.15, update copyright year
+
+  [ David Prévot ]
+  * Update copyright (years)
+  * Track version 2
+
+ -- David Prévot <taffit@debian.org>  Fri, 08 Jun 2018 18:39:17 -1000
+
+php-random-compat (2.0.12-1) unstable; urgency=medium
+
+  [ Paragon Initiative Enterprises ]
+  * Update CHANGELOG for v2.0.12
+
+  [ David Prévot ]
+  * Move project repository to salsa.d.o
+  * Update Standards-Version to 4.1.4
+
+ -- David Prévot <taffit@debian.org>  Tue, 24 Apr 2018 09:06:54 -1000
+
+php-random-compat (2.0.11-1) unstable; urgency=medium
+
+  [ Scott ]
+  * Update .gitattributes
+
+  [ David Prévot ]
+  * Drop upstream doc not distributed anymore
+  * Restore upstream changelog
+  * Update copyright (years)
+  * Update Standards-Version to 4.1.1
+
+ -- David Prévot <taffit@debian.org>  Thu, 05 Oct 2017 08:01:49 -1000
+
+php-random-compat (2.0.2-2) unstable; urgency=medium
+
+  * Ûpload to unstable since php-symfony-polyfill (from 1.2.0) allows
+    php-random-compat 2 as well
+  * Update Standards-Version to 3.9.8
+
+ -- David Prévot <taffit@debian.org>  Thu, 19 May 2016 20:53:09 -0400
+
+php-random-compat (2.0.2-1) experimental; urgency=medium
+
+  [ Scott ]
+  * Add consistency check
+  * Update version comment for v2.0.2
+
+ -- David Prévot <taffit@debian.org>  Mon, 04 Apr 2016 15:47:16 -0400
+
+php-random-compat (2.0.1-1) experimental; urgency=medium
+
+  * Upload to experimental since php-symfony-polyfill-php70 (as of 1.1.1-1)
+    depends on php-random-compat (<< 2~~)
+
+  [ Scott ]
+  * Version 2.0.1 (update comment)
+
+  [ David Prévot ]
+  * Revert "Track version 1"
+
+ -- David Prévot <taffit@debian.org>  Mon, 21 Mar 2016 00:07:55 -0400
+
+php-random-compat (1.4.1-1) unstable; urgency=medium
+
+  [ Scott ]
+  * Add even more possible values for open_basedir
+  * Version 1.4.1 (update comment)
+
+  [ David Prévot ]
+  * Track version 1
+
+ -- David Prévot <taffit@debian.org>  Sun, 20 Mar 2016 23:59:43 -0400
+
+php-random-compat (1.2.2-1) unstable; urgency=medium
+
+  [ Scott ]
+  * Prepare v1.2.2 release
+
+  [ David Prévot ]
+  * Build with recent pkg-php-tools for the PHP 7.0 transition
+
+ -- David Prévot <taffit@debian.org>  Fri, 11 Mar 2016 18:18:15 -0400
+
+php-random-compat (1.2.0-1) unstable; urgency=low
+
+  * Initial release: new symfony(-polyfill) dependency/split-of
+
+ -- David Prévot <taffit@debian.org>  Sun, 14 Feb 2016 16:09:19 -0400
